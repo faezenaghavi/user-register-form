@@ -1,7 +1,6 @@
 const savedPeople = JSON.parse(localStorage.getItem("people"));
 if (savedPeople) people = savedPeople;
 
-
 const loginBoxElement = document.getElementById('loginBox');
 const infoBoxElement = document.getElementById('informationBox');
 const buttonElement = document.getElementById('btn');
