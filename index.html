@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثبت نام کاربران</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body dir="rtl">
+    <nav>
+        <div class="logo">
+            <img src="/picture/img1.webp" alt="logo">
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#" class="link">خانه</a></li>
+                <li><a href="#" class="link">درباره ما</a></li>
+                <li><a href="#" class="link">تماس با ما</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- form section -->
+    <div class="form-container active" >
+        <form  class="form" id="userForm" >
+            <h2>ثبت نام کاربر جدید</h2>
+            
+            <div class="name-container">
+                <div class="form-group">
+                    <input type="text" id="name" class="input-box" required>
+                    <label for="name">نام</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" id="family" class="input-box" required>
+                    <label for="family">نام خانوادگی</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <input type="email" id="email" class="input-box" required>
+                <label for="email">ایمیل</label>
+            </div>
+            
+            <div class="form-group">
+                <input type="password" id="password" class="input-box" required>
+                <label for="password">رمز عبور</label>
+            </div>
+            
+          <div class="form-group">
+            <input type="text" id="job" class="input-box" required>
+            <label for="job">شغل</label>
+          </div>
+            
+            <div class="form-group">
+                <input type="text" id="phone" class="input-box" required>
+                <label for="phone">شماره تلفن</label>
+            </div>
+
+            <div class="form-group">
+                <select id="gender" class="select">
+                    <option class="option" value="">انتخاب جنسیت</option>
+                    <option class="option" value="مرد">مرد</option>
+                    <option class="option" value="زن">زن</option>
+                </select>
+            </div>
+
+            <div class="two-col">
+                  <div class="one">
+                    <input type="checkbox" id="register-check" class="check">
+                    <label for="register-check"> با قوانین سایت موافقم</label>
+                  </div>
+                  <button class="submit-btn" type="submit">ورود</button>
+            </div>
+        </form>
+          <!-- فرم اطلاعات کاربران -->
+          <div class="information-form" id="informationBox">
+           <div class="info-box">
+            <h2>اطلاعات کاربران</h2>
+            <button id="findbyEmail" class="btn-container">پیدا کردن با ایمیل</button>
+            <button id="checkIfAllHaveJob" class="btn-container">آیا همه شاغلند؟</button>
+            <button  id="checkIfAnyMale" class="btn-container">آیا حداقل یک مرد وجود دارد؟</button>
+             <button class="btn-container" id="showmodal">نمایش همه کاربران</button>
+             <div id="overlay" class="overlay"></div>
+            <div id="modal" class="modal"></div>
+           </div>
+            
+           </div>
+           
+        <!-- switch  -->
+         <div class="switchBtn">
+             <a href="#" class="loginBox" id="loginBox" onclick="loginBox()">ثبت نام</a>
+             <a href="#" class="informationBox" id="informationBox" onclick="informationBox()">اطلاعات کاربران</a>
+             <div class="btn-active" id="btn"></div>
+         </div>
+        <script src="/script.js"></script>
+    </div>
+</body>
+</html>
